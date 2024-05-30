@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Inter:wght@100..900&family=Mallanna&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(36, 36, 36);
+    /* background: radial-gradient(circle, rgba(29,29,29,1) 0%, rgba(53,53,53,1) 50%, rgba(0,0,0,1) 100%); */
+    /* background: linear-gradient(135deg, rgb(51, 120, 57),37%, white 37%, 38% , rgb(45, 45, 40) 38% ); */
+    /* background: linear-gradient(100deg, rgb(0, 8, 22), rgb(21, 0, 33)); */
+    /* background: linear-gradient(to bottom right, #442169 , rgb(30, 0, 53)); */
+    /* background: linear-gradient(135deg, rgba(96, 0, 155) 20% , rgba(185, 42, 113), rgba(191, 84, 62) ); */
+    /* background: linear-gradient(135deg, rgb(96, 0, 155) 20% , #b92a72, #bf543e ); */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+
+.nav-bar {
+    height: 6vh; 
+    background-color: rgba(11, 11, 16, 0.38);
+    display: flex;
+    align-items: center; 
+}
+
+.nav-bar > span{
+    margin-left: 1%;
+    color: rgb(203, 224, 242);
+    font-size: 3vh;
+    font-family:sans-serif;
+}
+
+
+
+
+.user-card {
+    background: linear-gradient(135deg, #4aa553 , rgb(82, 13, 134));
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin-top: 8%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    color: #fff;
+}
+
+/* Buttons */
+.logout-button {
+    margin-top: 2%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 10%;
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px solid #FFD700; /* Bright gold border */
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    color: #FFD700; /* Bright gold text color */
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button:hover {
+    background: #FFD700; /* Bright gold background on hover */
+    color: #2C3E50; /* Navy blue text */
+}
+
+.logout-button:active {
+    background: #C9A842; /* Darker gold background on active */
+    color: #2C3E50; /* Navy blue text */
+}
+

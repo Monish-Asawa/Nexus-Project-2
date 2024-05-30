@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="../styling/sign_up_page.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <span>NexBite</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+
+        <div class="box-container">
+            <div class="box-back">
+                <div class="box">
+                    <form id="SignUpForm" onsubmit="return validateForm()">
+                        <div class="form-heading">
+                            <span class="welcome">Welcome</span><br>
+                            <span class="container-content">To The Sign Up Page</span>        
+                        </div>
+        
+                        <div class="names-box">
+                            <div class="firstname">
+                                <span style="display: block; margin-bottom: 15px;">First Name</span>
+                                <input name="firstName" id="firstname-input-box" type="text" placeholder="First Name" style="width: 100%;">
+                            </div>
+                            <div class="lastname">
+                                <span style="display: block; margin-bottom: 15px;">Last Name</span>
+                                <input name="lastName" type="text" placeholder="Last Name (optional)" style="width: 100%;">
+                            </div>
+                        </div>
+                        
+                        <span>Email</span>
+                        <input name="email" id="email-input-box" type="text" placeholder="Email or Username" style="width: 100%;">
+                        <span>Password</span>
+                        <input name="password" id="password-box" type="password" placeholder="Password" style="width: 100%;">
+                        <span>Confirm Password</span>
+                        <input id="confirm-password-box" type="password" placeholder="Confirm Password" style="width: 100%;">
+        
+                        <div class="login-options">
+                            <label>
+                                <input type="checkbox" style="cursor: pointer;">
+                                <span style="cursor: pointer;">Remember me</span>
+                            </label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        
+                        <button type="submit">SIGN IN</button>
+        
+                        <div class="divider">Are you an existing user?</div>
+                        <a href="./login_page.html">
+                            <button type="button" class="login-button">LOGIN HERE</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="side-panel">
+            <div class="side-panel-box">
+                <div class="side-panel-title-box">
+                    <h1 class="side-panel-title">Order Now!</h1><br>
+                </div>
+                <img id='bowl' src='../assets/bowl-removebg.png'>
+                <div class="side-panel-content-box">
+                    <h1 class="side-panel-content">Starting at 99/-</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./signup.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../styling/login_page.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <span>NexBite</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="side-panel">
+            <div class="side-panel-box">
+                <div class="side-panel-title-box">
+                    <h1 class="side-panel-title">Order Now!</h1><br>
+                </div>
+                <img id='bowl' src='../assets/bowl-removebg.png'>
+                <div class="side-panel-content-box">
+                    <h1 class="side-panel-content">Starting at 99/-</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box-back">
+                <div class="box">
+                    <form id="loginForm" onsubmit="return validateForm()">
+                        <div class="form-heading">
+                            <span class="welcome">Welcome</span><br>
+                            <span class="container-content">To The Login Page</span>        
+                        </div>
+
+                        <span>Email</span>
+                        <input type="text" name="email" placeholder="Email or Username">
+                        <span>Password</span>
+                        <input type="password" name="password" placeholder="Password">
+                        <div class="login-options">
+                            <label><input type="checkbox" style="cursor: pointer;"><span style="cursor: pointer;">Remember me</span></label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit">LOGIN</button>
+
+                        <div class="divider">New user?</div>
+                        <a href="./sign_up_page.html" >
+                            <button type="button" class="signup-button">SIGN UP HERE</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./login.js"></script>
+    
+</body>
+</html>
